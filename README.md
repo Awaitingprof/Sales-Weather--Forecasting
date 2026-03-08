@@ -11,22 +11,22 @@ By applying a regression model, the goal is to predict future sales, identify th
 The dataset contains store-level daily sales data enriched with weather information.
 
 **Columns**
--STORE_ID (string) : The Unique store identifier
--STORE_NAME (string) : The Store name
--CITY (string) : The City where the store is located
--COUNTRY (string) : The Country of the store
--PRODUCT_ID (string) : The Unique product identifier
--PRODUCT_NAME (string) : The Name of the product
--CATEGORY (string) : The Product category
--SALES_DATE (datetime) : The Date of the sales record
--TOTAL_UNITS_SOLD (int) : The number of units sold (Target variable)
--TOTAL_REVENUE (float) : The revenue generated
--AVG_UNIT_PRICE (float) : The average unit price of product
--AVG_TEMP (float) : The average daily temperature
--MAX_TEMP (float) : The maximum daily temperature
--MIN_TEMP (float) : The minimum daily temperature
--AVG_SUNSHINE (float) : The average sunshine hours
--AVG_WEATHER_CODE (int) : The encoded weather condition
+-***STORE_ID (string)*** : The Unique store identifier
+-***STORE_NAME (string)*** : The Store name
+-***CITY (string)*** : The City where the store is located
+-***COUNTRY (string)***: The Country of the store
+-***PRODUCT_ID (string)*** : The Unique product identifier
+-***PRODUCT_NAME (string)*** : The Name of the product
+-***CATEGORY (string)*** : The Product category
+-***SALES_DATE (datetime)*** : The Date of the sales record
+-***TOTAL_UNITS_SOLD (int)*** : The number of units sold (Target variable)
+-***TOTAL_REVENUE (float)*** : The revenue generated
+-***AVG_UNIT_PRICE (float)*** : The average unit price of product
+-***AVG_TEMP (float)*** : The average daily temperature
+-***MAX_TEMP (float)v : The maximum daily temperature
+-***MIN_TEMP (float)*** : The minimum daily temperature
+-***AVG_SUNSHINE (float)*** : The average sunshine hours
+-***AVG_WEATHER_CODE (int)*** : The encoded weather condition
 
 Engineered features: rolling averages, rolling sums, lagged sales, and seasonal encodings (month_sin, weekday_cos, etc.)
 

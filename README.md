@@ -31,11 +31,11 @@ The dataset contains store-level daily sales data enriched with weather informat
 Engineered features: rolling averages, rolling sums, lagged sales, and seasonal encodings (month_sin, weekday_cos, etc.)
 
 ## Objectives
--Preprocess both categorical and numerical features for model training.
--Train a Decision Tree Regressor to predict TOTAL_UNITS_SOLD.
--Evaluate performance using metrics such as RMSE, MAE, and R².
--Identify key features (weather and historical demand) that most influence sales.
--Provide interpretable business insights on how weather impacts demand.
+- Preprocess both categorical and numerical features for model training.
+- Train a Decision Tree Regressor to predict TOTAL_UNITS_SOLD.
+- Evaluate performance using metrics such as RMSE, MAE, and R².
+- Identify key features (weather and historical demand) that most influence sales.
+- Provide interpretable business insights on how weather impacts demand.
 
 ## ⚙️ Methods
 
@@ -49,17 +49,17 @@ Engineered features: rolling averages, rolling sums, lagged sales, and seasonal 
 3. **Modelling**
 - Decision Tree Regressor (scikit-learn) for faster training.
 - Chronological train/test split (80% train, 20% test).
-- Pipeline: preprocessing + model training.
+-  Pipeline: preprocessing + model training.
 
 5. **Evaluation**
--Metrics: RMSE, MAE, R²
--Plot: Actual vs Predicted sales curve
--Feature importance ranking
+- Metrics: RMSE, MAE, R²
+- Plot: Actual vs Predicted sales curve
+- Feature importance ranking
 
-6. **Interpretation**
--Identify whether past demand or weather conditions are stronger predictors.
--Understand the role of seasonality (weekdays, months).
--Provide actionable business insights.
+7. **Interpretation**
+- Identify whether past demand or weather conditions are stronger predictors.
+- Understand the role of seasonality (weekdays, months).
+- Provide actionable business insights.
 
 **Results**
 -Evaluation Metrics:
@@ -70,25 +70,25 @@ R²: 0.93
 This means the model explains ~93% of the variance in sales and makes predictions with very low error.
 
 ## Top Feature Importances:
--Rolling average sales (past 7 days)
--Lagged sales (previous day, previous week)
--Average temperature and sunshine hours
--Weekday/month seasonality
+- Rolling average sales (past 7 days)
+- Lagged sales (previous day, previous week)
+- Average temperature and sunshine hours
+- Weekday/month seasonality
 
 ### Business Insight:
--Sales are most strongly influenced by recent purchase patterns.
--Weather factors (temperature & sunshine) play a significant role in shaping demand.
--Seasonal trends (day of week, month) add extra predictive power.
+- Sales are most strongly influenced by recent purchase patterns.
+- Weather factors (temperature & sunshine) play a significant role in shaping demand.
+- Seasonal trends (day of week, month) add extra predictive power.
 
 ### Technologies Used
--Python (pandas, numpy, scikit-learn, matplotlib, seaborn)
--Jupyter Notebook
--Joblib (for saving trained models)
+- Python (pandas, numpy, scikit-learn, matplotlib, seaborn)
+- Jupyter Notebook
+- Joblib (for saving trained models)
 
 ### Responsible AI
--Predictions are only as good as the input data (e.g., unusual weather events may reduce accuracy).
--Model should not be used for financial/legal decisions without human oversight.
--Bias in weather or store data (e.g., limited to one country/region) may reduce generalization.
+- Predictions are only as good as the input data (e.g., unusual weather events may reduce accuracy).
+- Model should not be used for financial/legal decisions without human oversight.
+- Bias in weather or store data (e.g., limited to one country/region) may reduce generalization.
 
 #### Intended for research, education, and retail analytics experiments only.
 
@@ -98,7 +98,7 @@ This means the model explains ~93% of the variance in sales and makes prediction
 This project is licensed under the MIT License.
 
 #### References
--scikit-learn documentation
--Time Series Forecasting with Machine Learning
--Kaggle retail sales datasets
--Research on weather impact in retail analytics
+- scikit-learn documentation
+- Time Series Forecasting with Machine Learning
+- Kaggle retail sales datasets
+- Research on weather impact in retail analytics

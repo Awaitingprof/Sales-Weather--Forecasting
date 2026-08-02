@@ -40,23 +40,23 @@ Engineered features: rolling averages, rolling sums, lagged sales, and seasonal 
 ## ⚙️ Methods
 
 1. **Data Pre-processing**
--Convert SALES_DATE to datetime and extract year, month, day, weekday.
--Encode seasonal patterns using sine/cosine transformations.
--Generate lag features (previous day/week sales) and rolling averages.
--Encode categorical variables (CITY, CATEGORY, etc.).
--Scale numeric features and handle missing values.
+*****Convert SALES_DATE to datetime and extract year, month, day, weekday.*****
+*****Encode seasonal patterns using sine/cosine transformations.*****
+*****Generate lag features (previous day/week sales) and rolling averages.*****
+*****Encode categorical variables (CITY, CATEGORY, etc.).*****
+*****Scale numeric features and handle missing values.*****
 
-2. **Modelling**
+3. **Modelling**
 -Decision Tree Regressor (scikit-learn) for faster training.
 -Chronological train/test split (80% train, 20% test).
 -Pipeline: preprocessing + model training.
 
-3. **Evaluation**
+4. **Evaluation**
 -Metrics: RMSE, MAE, R²
 -Plot: Actual vs Predicted sales curve
 -Feature importance ranking
 
-4. **Interpretation**
+5. **Interpretation**
 -Identify whether past demand or weather conditions are stronger predictors.
 -Understand the role of seasonality (weekdays, months).
 -Provide actionable business insights.

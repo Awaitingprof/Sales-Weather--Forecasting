@@ -47,16 +47,16 @@ Engineered features: rolling averages, rolling sums, lagged sales, and seasonal 
 - Scale numeric features and handle missing values.
 
 3. **Modelling**
-Decision Tree Regressor (scikit-learn) for faster training.
--Chronological train/test split (80% train, 20% test).
--Pipeline: preprocessing + model training.
+- Decision Tree Regressor (scikit-learn) for faster training.
+- Chronological train/test split (80% train, 20% test).
+- Pipeline: preprocessing + model training.
 
-4. **Evaluation**
+5. **Evaluation**
 -Metrics: RMSE, MAE, R²
 -Plot: Actual vs Predicted sales curve
 -Feature importance ranking
 
-5. **Interpretation**
+6. **Interpretation**
 -Identify whether past demand or weather conditions are stronger predictors.
 -Understand the role of seasonality (weekdays, months).
 -Provide actionable business insights.
